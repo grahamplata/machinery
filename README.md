@@ -348,6 +348,10 @@ type Interface interface {
 Then just set the logger in your setup code by calling `Set` function exported by `github.com/RichardKnop/machinery/v1/log` package:
 
 ```go
+// Example logger setup using logrus
+myCustomLogger := logrus.New()
+myCustomLogger.SetLevel(logrus.InfoLevel)
+
 log.Set(myCustomLogger)
 ```
 
